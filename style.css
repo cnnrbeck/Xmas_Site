@@ -1,0 +1,36 @@
+/* Color scheme:
+#f3e33ca - "welcome white"
+#6d7645 - "garden spot"
+#d54f43 - "gladiola"
+#abd17a - "ryegrass"
+#4f3426 - "french roast" */
+
+body {
+    margin: 0;
+    background-color: #f3e3ca;
+}
+
+.welcome {
+    text-align: center;
+}
+
+h1 {
+    color: #d54f43;
+}
+
+h2 {
+    color: #6d7645;
+}
+
+.artwork {
+    display: flex;
+    justify-content: center;
+}
+
+#xmas_tree {
+    max-height: 400px;
+}
+/* 
+.music_player {
+    align-items: center;
+} */
