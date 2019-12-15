@@ -4,33 +4,43 @@
 #d54f43 - "gladiola"
 #abd17a - "ryegrass"
 #4f3426 - "french roast" */
-
+html,
 body {
     margin: 0;
-    background-color: #f3e3ca;
+    padding: 0;
+    height: 100%;
+    background-color: black;
+    font-family: 'Thoma', sans-serif;
+    font-size: 1.1rem;
 }
 
-.welcome {
-    text-align: center;
+.header {
+    width: 100%;
+    margin-left: -5px;
+    background-image: url(/assets/snowfall.gif);
+    background-repeat: no-repeat;
+    background-position: 10% 20%;
 }
 
-h1 {
-    color: #d54f43;
+.headerImage {
+    max-height: 100%;
 }
 
-h2 {
-    color: #6d7645;
+.famPic {
+    max-width: 300px;
 }
 
-.artwork {
-    display: flex;
-    justify-content: center;
+main {
+    align-items: center;
 }
 
-#xmas_tree {
-    max-height: 400px;
+.memoryDiv {
+    margin-top: -500px;
+    background-color: white;
+    height: 500px;
 }
-/* 
+
+/*
 .music_player {
     align-items: center;
 } */

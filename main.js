@@ -18,26 +18,46 @@ let famPic = document.createElement('img')
 famPic.className = "famPic"
 
 
-mainArea.appendChild(memoryButton)
-mainArea.appendChild(memoryMessage)
+let memoryDiv = document.createElement('div')
+memoryDiv.className = "memoryDiv"
 
-//Chooses random memory from memory api
+memoryDiv.appendChild(memoryButton)
+memoryDiv.appendChild(memoryMessage)
+
+mainArea.appendChild(memoryDiv)
+
+//Chooses a non-repeating random memory from memory api
 function randNum () {
-    return Math.floor(Math.random() * 5)
+
+    let num = Math.floor(Math.random() * 10)
+
+    while (num == lastNum)
+    {
+        num = Math.floor(Math.random() * 10)
+    }
+
+    return num
+
+
 }
+
+let lastNum = 0;
 
 memoryButton.addEventListener('click', () => {
 
-    let tempMem = randNum()
+    let tempId = randNum()
 
 
     memories.forEach(function(memory) {
-        if(memory.id == tempMem)
+        
+        if(memory.id == tempId) 
         {
-            memoryMessage.textContent = memory.memory
+            memoryMessage.textContent = memory.family_member + " says: " + memory.memory
             famPic.src = memory.img
-            mainArea.appendChild(famPic)
+            memoryDiv.appendChild(famPic)
+            lastNum = memory.id
         }
+        
     })
 
 
