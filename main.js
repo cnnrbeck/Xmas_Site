@@ -29,11 +29,11 @@ mainArea.appendChild(memoryDiv)
 //Chooses a non-repeating random memory from memory api
 function randNum () {
 
-    let num = Math.floor(Math.random() * 10)
+    let num = Math.floor(Math.random() * 25)
 
     while (num == lastNum)
     {
-        num = Math.floor(Math.random() * 10)
+        num = Math.floor(Math.random() * 25)
     }
 
     return num

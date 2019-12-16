@@ -30,14 +30,17 @@ body {
     max-width: 300px;
 }
 
-main {
-    align-items: center;
+
+.memoryMessage {
+    text-align: center
 }
 
 .memoryDiv {
+    justify-content: center;
     margin-top: -500px;
     background-color: white;
     height: 500px;
+    z-index: 10;
 }
 
 /*
