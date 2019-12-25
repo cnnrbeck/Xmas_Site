@@ -1,7 +1,6 @@
 import {memories} from './memories.js'
 
 
-
 let mainArea = document.querySelector('main')
 
 
@@ -11,29 +10,33 @@ memoryButton.textContent = "Click me for a memory!"
 memoryButton.className = "memoryButton"
 
 let memoryMessage = document.createElement('h1')
-memoryMessage.className = "memoryMessage"
+memoryMessage.id = "memoryMessage"
 
 
 let famPic = document.createElement('img')
-famPic.className = "famPic"
+famPic.id = "famPic"
 
 
 let memoryDiv = document.createElement('div')
-memoryDiv.className = "memoryDiv"
+memoryDiv.id = "memoryDiv"
 
-memoryDiv.appendChild(memoryButton)
+let imgDiv = document.createElement('div')
+imgDiv.id = "memoryDiv"
+
+mainArea.appendChild(memoryButton)
 memoryDiv.appendChild(memoryMessage)
 
+mainArea.appendChild(imgDiv)
 mainArea.appendChild(memoryDiv)
 
 //Chooses a non-repeating random memory from memory api
 function randNum () {
 
-    let num = Math.floor(Math.random() * 25)
+    let num = Math.floor(Math.random() * 30)
 
     while (num == lastNum)
     {
-        num = Math.floor(Math.random() * 25)
+        num = Math.floor(Math.random() * 30)
     }
 
     return num
@@ -54,7 +57,7 @@ memoryButton.addEventListener('click', () => {
         {
             memoryMessage.textContent = memory.family_member + " says: " + memory.memory
             famPic.src = memory.img
-            memoryDiv.appendChild(famPic)
+            imgDiv.appendChild(famPic)
             lastNum = memory.id
         }
         
