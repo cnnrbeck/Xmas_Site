@@ -26,32 +26,32 @@ export const memories = [
         "id": "5",
         "memory": "Deciding to go to Oregon",
         "family_member": "Hadley",
-        "img" : "assets/Hadley_AvatarHead.png"
+        "img" : "assets/PaytonAvatar.png"
     },{
         "id": "6",
         "memory": "We got to visit mom in Portland and had a blast!",     
         "family_member": "Payton",
-        "img" : "assets/Hadley_AvatarHead.png"
+        "img" : "assets/PaytonAvatar.png"
     },{
         "id": "7",
         "memory": "Megan and I got to eat the top tier of our wedding cake.",     
         "family_member": "Payton",
-        "img" : "assets/Jessie_AvatarHead.png"
+        "img" : "assets/PaytonAvatar.png"
     },{
         "id": "8",
         "memory": "We surprised Meg and a birthday cake at Colby’s graduation party.",     
         "family_member": "Payton",
-        "img" : "assets/Hadley_AvatarHead.png"
+        "img" : "assets/PaytonAvatar.png"
     },{
         "id": "9",
         "memory": "Megan and I went to our first Blues game.",     
         "family_member": "Payton",
-        "img" : "assets/Jessie_AvatarHead.png"
+        "img" : "assets/PaytonAvatar.png"
     },{
         "id": "10",
         "memory": "Megan’s little sister moved in with us in Springfield!",     
         "family_member": "Payton",
-        "img" : "assets/Hadley_AvatarHead.png"
+        "img" : "assets/PaytonAvatar.png"
     },
     //Landon
     {
@@ -134,6 +134,33 @@ export const memories = [
         "family_member": "Mom",
         "img" : "assets/Mom_AvatarHead.png"
     },
+    //Jessie
+    {
+        "id": "26",
+        "memory": "The drive out to Portland, the incredible scenery, and making it out of the idaho muntains alive in the Uhaul. Then visiting Mom, Evan, and Sarah in March, getting to see the west coast beaches.",     
+        "family_member": "Jessie",
+        "img" : "assets/Jessie_AvatarHead.png"
+    },{
+        "id": "27",
+        "memory": "Graduating from the programming internship and earning the title of Jr. Developer.",     
+        "family_member": "Jessie",
+        "img" : "assets/Jessie_AvatarHead.png"
+    },{
+        "id": "28",
+        "memory": "The moment Bobby and I realized we both forgot our three year anniversary.",     
+        "family_member": "Jessie",
+        "img" : "assets/Jessie_AvatarHead.png"
+    },{
+        "id": "29",
+        "memory": "Getting to live next to two of my siblings for awhile and the fun evenins, bonfires, and talks we've had. We'll miss you Hadley!",     
+        "family_member": "Jessje",
+        "img" : "assets/Jessie_AvatarHead.png"
+    },{
+        "id": "30",
+        "memory": "Getting to spend some time with the whole family this December, and not having to study through it!",     
+        "family_member": "Jessie",
+        "img" : "assets/Jessie_AvatarHead.png"
+    }
 
 ]
 
