@@ -14,36 +14,58 @@ body {
     font-size: 1.1rem;
 }
 
-.header {
+#music_player {
+    z-index: 10;
+}
+
+#header {
     width: 100%;
+
+    margin-top: -90px;
     margin-left: -5px;
     background-image: url(/assets/snowfall.gif);
     background-repeat: no-repeat;
     background-position: 10% 20%;
 }
 
-.headerImage {
-    max-height: 100%;
+#headerImage {
+    max-width: 100%;
+
 }
 
-.famPic {
+#mainArea {
+    margin-top: -300px;
+}
+
+#famPic {
+    margin-top: -400px;
     max-width: 300px;
 }
 
-
-.memoryMessage {
-    text-align: center
-}
-
-.memoryDiv {
-    justify-content: center;
-    margin-top: -500px;
+h1 {
     background-color: white;
-    height: 500px;
-    z-index: 10;
+}
+#memoryMessage {
+    text-align: center;
 }
 
-/*
-.music_player {
-    align-items: center;
-} */
+#memoryDiv {
+    display: flex;
+  align-items: center;
+  justify-content: center;
+    margin-top: -500px;
+    height: 500px;
+}
+
+button {
+    background-color: #d54f43;
+    color: #f3e33c;
+    width: 200px;
+    height: 90px;
+    font-size: 1.1rem;
+    font-family: 'Thoma', sans-serif;
+    position: 10% 50%;
+    border: none;
+    margin-left: 110px;
+}
+
